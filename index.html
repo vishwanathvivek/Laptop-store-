@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPTOP STORES</title>
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/a9755d0e0f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contactus.css">
+</head>
+
+<body>
+    <!-- header section starts  -->
+    <header class="header">
+
+        <a href="#" class="logo"><i class="fas fa-laptop"></i>Laptop stores</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#popular">Popular</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#review">Review</a>
+            <!-- <a href="#order">Order</a> -->
+            <a href="#contact us">Contact Us</a>
+            <a id="loginBtn" href="login.html">Login</a>
+            <!-- <a id="cartBtn" class="c-pointer" onclick="logout()">Logout</a> -->
+            <a id="cartBtn" class="c-pointer" onclick="showCart()">My Cart</a>
+            <a id="logoutBtn" class="c-pointer" onclick="logout()">Logout</a>
+        </nav>
+
+        <!-- Cart section starts -->
+        <div id="cartSection" class="cart-items-container">
+
+
+        </div>
+        <!-- Cart section ends -->
+
+    </header>
+    <!-- header section ends -->
+
+    
+
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>we have best for you</h3>
+            <a href="#popular" class="btn">Explore our popular laptops</a>
+        </div>
+
+        <div class="image">
+            <img src="images/v12.jpg" alt="" loading="lazy">
+        </div>
+
+    </section>
+    <!-- home section ends -->
+
+
+    <!-- popular section starts  -->
+    <section class="popular" id="popular">
+
+        <h1 class="heading">most<span> popular</span> Laptops</h1>
+
+        <div class="box-container" id="category-1">
+
+            
+
+        </div>
+
+    </section>
+    <!-- popular section ends -->
+
+
+    <!-- steps section starts  -->
+    <div class="step-container">
+
+        <h1 class="heading">how it <span>works</span></h1>
+
+        <section class="steps">
+
+            <div class="box">
+                <img src="images/step-1.png" alt="" loading="lazy">
+                <h3>choose your technical laptops</h3>
+            </div>
+            <div class="box">
+                <img src="images/step-2.jpg" alt="" loading="lazy">
+                <h3>free and fast delivery</h3>
+            </div>
+            <div class="box">
+                <img src="images/step-3.jpg" alt="" loading="lazy">
+                <h3>easy payments methods</h3>
+            </div>
+            <div class="box">
+                <img src="images/step-4.jpg" alt="" loading="lazy">
+                <h3>and finally, happy customers</h3>
+            </div>
+
+        </section>
+
+    </div>
+    <!-- steps section ends -->
+
+
+    <!-- gallery section starts  -->
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading"> our modren collections </h1>
+
+        <div class="box-container" id="category-2">
+
+        </div>
+
+    </section>
+    <!-- gallery section ends -->
+
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> our customers <span>reviews</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/sadhana.jpg" alt="" loading="lazy">
+                <h3>Sadhana</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>I just loved your collection,variety of laptops and the advance laptops are available for low cost
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/vicky.jpg" alt="" loading="lazy">
+                <h3>Vicky</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>on time delevery..</p>
+            </div>
+            <div class="box">
+                <img src="images/vivek.jpg" alt="" loading="lazy">
+                <h3>Vivek</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>5****** rating for the collection fabulus!!!!!!</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- review section ends -->
+
+    
+
+    <!-- order section starts  -->
+    <section class="order" id="order">
+
+        <h1 class="heading"> <span>order</span> now </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="./images/orderimg.jpeg" alt="" loading="lazy">
+            </div>
+            
+            <div class="form">
+                <div class="inputBox">
+                    <input id="oName" type="text" placeholder="Name" required>
+                    <input id="oNumber" type="number" placeholder="Mobile" required>
+                </div>
+
+                <div class="inputBox">
+                    <input id="oEmail" type="email" placeholder="Email" required>
+                </div>
+
+                <textarea placeholder="Address" name="" id="oAddress" cols="30" rows="5" required></textarea>
+                <div class="inputBox">
+                    <input id="oPin" type="number" placeholder="Pin Code" required>
+                </div>
+
+
+                <button class="btn" onclick="OrderConfirm()">Confirm Order</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- order section ends -->
+
+
+    <!-- contact us section starts  -->
+    <section class="contact us" id="contact us">
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="images/contactus.jpeg" alt="Contact Us Image" loading="lazy">
+            </div>
+            <div class="contact-info">
+                <h1>Contact Us</h1>
+                <p><strong>Address:</strong> 123 Main Street, Cityville</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@example.com</p>
+                <p><strong>Website:</strong> <a href="http://www.example.com">www.example.com</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- contact us section ends  -->
+
+    <!-- footer section  -->
+    <section class="footer" id="footer">
+
+        <h2 style="color:white;">Connect with us</h2>
+
+        <div class="share">
+            <a href="https://www.facebook.com/" class="btn"> facebook</a>
+            <a href="https://www.instagram.com/" class="btn">instagram</a>
+            <a href="https://www.whatsapp.com/" class="btn">whatsapp</a>
+        </div>
+
+
+
+    </section>
+
+    <!-- scroll top button  -->
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <div id="toast-container">
+        <i id="toast-icon" class=""></i>
+        <span id="toast-message" style="margin-left: 10px" class=""></span>
+    </div>
+
+    <!-- custom js file link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

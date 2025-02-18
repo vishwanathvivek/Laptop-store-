@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Store | Signup</title>
+
+    <script src="https://kit.fontawesome.com/a9755d0e0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/signup.css"></link>
+    <script defer src="js/signup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Signup</h2>
+        <div>
+            <input id="name" type="text" name="name" placeholder="Name" required><br>
+            <input id="email" type="email" name="email" placeholder="Email" required><br>
+            <input id="password" type="password" name="password" placeholder="Password" required><br>
+            <button id="signupbtn" onclick="signup()">Sign Up</button>
+            <p class="link">Already have an account? &nbsp; <a href="login.html">Login </a>here</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="errorContainer" class="error-container hide">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <span id="errorMessage"></span>
+    </div>
+</body>
+</html>
