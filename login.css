@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    background-image: url(../images/background/login.jpg);
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: rgb(255, 249, 249);
+    font-size: 74px;
+    opacity: 1;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* padding-left: 1px;
+    float: left;
+    padding-top: 150px; */
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: rgb(252, 249, 249);
+    position: relative;
+    padding-top: 290px;
+    opacity: 0.9;
+    font-family: cursive;
+
+}
+
+.content h2 {
+    opacity: 0.6;
+}
+
+.form-container {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
+.form1 {
+    width: 300px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+.form1 h2 {
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-size: 25px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px 30px;
+    padding: 8px;
+}
+
+.form1 input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    /* font-family: sans-serif; */
+    font-size: medium;
+}
+
+.form1 input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    /* font-family: Arial; */
+}
+
+.btn {
+    width: 240px;
+    height: 40px;
+    background: rgb(253, 172, 10);
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.btn:hover {
+    background: rgb(239, 248, 248);
+    color: rgb(255, 255, 255);
+    ;
+    font-weight: bold;
+}
+
+.btn a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-weight: bold;
+}
+
+.content a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.form1 .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    color: rgb(247, 250, 250);
+    text-align: center;
+}
+
+.form1 .link a {
+    text-decoration: none;
+    color: rgb(220, 226, 127);
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgb(23, 236, 236);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.icons a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.icons ion-icon {
+    color: white;
+    font-size: 25px;
+    padding-left: 28px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: rgb(15, 209, 209);
+}
+
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.loader-container.fade-out {
+    top: -200%;
+
+}
+
+
+.error-container {
+    width: 300px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #aa1f1f99;
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.error-container.success {
+    background-color: #13722099;
+}
+
+.hide {
+    opacity: 0;
+}
+
+i {
+    margin-right: 10px;
+}

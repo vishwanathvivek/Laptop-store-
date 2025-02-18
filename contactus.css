@@ -1,0 +1,38 @@
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-left: 20px;
+}
+
+.contact-info h1 {
+    margin-top: 0;
+    margin-bottom: 1 0px;
+    font-size: 32px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
